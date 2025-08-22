@@ -99,6 +99,10 @@ header .user-actions .signup-btn {
 /* header ends */
 .mobile-menu {
     display: none;
+    overflow-y: auto;
+    z-index: 1000;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
 }
 
 .container {
