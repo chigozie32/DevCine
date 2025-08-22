@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive Movies</title>
+  <link rel="stylesheet" href="exclusive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/Logo 2.jpg" type="image/x-icon">
+</head>
+
+<body onload="protectPage()">
+  <header>
+    <h1>Exclusive Movies</h1>
+    <p>Handpicked Nigerian & International hits – only for members!</p>
+    <a href="index.html"><button>home</button></a>
+    <a href="watchlist.html"><button>Watchlist</button></a>
+  </header>
+
+  <main>
+    <!-- Action Movies -->
+    <section id="Action" class="category">
+      <h2>Action</h2>
+      <div class="movie-row">
+        <div class="movie-card">
+          <img src="images/The flash-1.jpg" alt="Fast and furious">
+          <h3>The Flash</h3>
+          <p>⭐ 7.3</p>
+          <button onclick="addToWatchlist(
+          'The Flash',
+          'images/The flash-1.jpg',
+          '7.3')">Add to Watchlist</button>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/Inside Out-1.jpg" alt="inside out">
+          <h3>Inside Out</h3>
+          <p>⭐ 6.8</p>
+          <button onclick="addToWatchlist(
+          'Inside Out',
+          'images/Inside Out-1.jpg',
+          '6.8')">Add to Watchlist</button>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/Spider man.jpg" alt="spider man">
+          <h3>Spider Man</h3>
+          <p>⭐ 7.8</p>
+          <button onclick="addToWatchlist(
+          'Spider man',
+          'images/Spider man.jpg',
+          '7.8')">Add to Watchlist</button>
+        </div>
+
+        <!-- Add more of Action movies here -->
+      </div>
+    </section>
+
+    <!-- Comedy Movies -->
+    <section id="comedy" class="category">
+      <h2>Comedy</h2>
+      <div class="movie-row">
+        <div class="movie-card">
+          <img src="images/Comedy.jpg" alt="Comedy">
+          <h3>Mr Bones</h3>
+          <p>⭐ 7</p>
+          <button onclick="addToWatchlist(
+          'Mr Bones',
+          'images/Comedy.jpg',
+          '7')">Add to Watchlist</button>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/Omo gheto.jpg" alt="Omo Ghetto: The Saga">
+          <h3>Omo Ghetto: The Saga</h3>
+          <p>⭐ 7.1</p>
+          <button onclick="addToWatchlist(
+          'Omo gheto: The saga',
+          'images/Omo gheto.jpg',
+          '7')">Add to Watchlist</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Horror Movies -->
+    <section id="horror" class="category">
+      <h2>Horror</h2>
+      <div class="movie-row">
+        <div class="movie-card">
+          <img src="images/The nun.jpg" alt="The Nun">
+          <h3>The Nun</h3>
+          <p>⭐ 5.3</p>
+          <button onclick="addToWatchlist(
+          'The nun',
+          'images/The nun.jpg',
+          '7')">Add to Watchlist</button>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/Horror.jpg" alt="scream">
+          <h3>Scream</h3>
+          <p>⭐ 7</p>
+          <button onclick="addToWatchlist(
+          'Scream',
+          'images/Horror.jpg',
+          '7')">Add to Watchlist</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sci-Fi Movies -->
+    <section id="sci-fi" class="category">
+      <h2>Sci-Fi</h2>
+      <div class="movie-row">
+        <div class="movie-card">
+          <img src="images/Interstellar.jpg" alt="Interstellar">
+          <h3>Interstellar</h3>
+          <p>⭐ 8.6</p>
+          <button onclick="addToWatchlist(
+          'Interstellar',
+          'images/Interstellar.jpg',
+          '8.6')">Add to Watchlist</button>
+        </div>
+
+
+        <div class="movie-card">
+          <img src="images/Sci-fi.jpg" alt="Iron Man">
+          <h3>Iron Man</h3>
+          <p>⭐ 8.3</p>
+          <button onclick="addToWatchlist(
+          'Iron man',
+          'images/Sci-fi.jpg',
+          '8.3')">Add to Watchlist</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Romance Movies -->
+    <section id="romance" class="category">
+      <h2>Romance</h2>
+      <div class="movie-row">
+        <div class="movie-card">
+          <img src="images/Titanic.jpg" alt="Titanic">
+          <h3>Titanic</h3>
+          <p>⭐ 7.9</p>
+          <button onclick="addToWatchlist(
+          'Titanic',
+          'images/Titanic.jpg',
+          '7.9')">Add to Watchlist</button>
+        </div>
+
+
+        <div class="movie-card">
+          <img src="images/Romance.jpg" alt="perfect find">
+          <h3>Perfect Find</h3>
+          <p>⭐ 7</p>
+          <button onclick="addToWatchlist(
+          'Perfect Find',
+          'images/Romance.jpg',
+          '7')">Add to Watchlist</button>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <script src="exclusive.js"></script>
+  <script src="authentication.js"></script>
+</body>
+
+</html>

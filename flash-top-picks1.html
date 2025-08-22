@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Flash - Movie Details</title>
+    <link rel="shortcut icon" href="images/Logo 2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="flash-top-picks1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- <div class="logo">Logo</div> -->
+        <div class="logo">
+            <img src="images/Logo 2.jpg" alt="logo" srcset="">
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="exclusive.html">Exclusive</a></li>
+                <li><a href="watchList.html">Watchlist</a></li>
+                <li><a href="forYou.html">For You</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="signIn.html" class="login-btn">Login</a>
+            <a href="signUp.html" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <span class="close-btn">&times;</span>
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="forYou.html">For You</a>
+        <a href="profile.html">Profile</a>
+        <a href="exclusive.html">Exclusive</a>
+        <a href="watchList.html">Watchlist</a>
+        <a href="signIn.html">Login</a>
+        <a href="signUp.html">Sign Up</a>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="movie-contain">
+            <div class="poster">
+                <img src="images/The flash-1.jpg" alt="The Flash Poster">
+            </div>
+            <div class="hero-details">
+                <h1>The Flash</h1>
+                <p class="year">2023</p>
+                <p class="synopsis">
+                    This follows Barry as he travels back in time to prevent his mother's murder,
+                    which creates a ripple effect and alters the future, leading him to team up with
+                    other versions of himself and heroes to fix the timeline.
+                </p>
+                <!-- <button class="watchlist-btn">Add to Watchlist</button> -->
+                <button class="watchlist-btn" onclick='addToWatchlist({ 
+  title: "Flash", 
+  image: "images/The Flash.jpg", 
+  rating: "8.8" 
+})'>
+                    Add to Watchlist
+                </button>
+            </div>
+        </div>
+
+        <!-- Info Bar Section -->
+        <section class="info-bar">
+            <div class="rating">
+                <span class="score"> <span class="high-score">6.7</span>/10.</span>
+                <!-- <span class="votes">&star;20,897</span> -->
+                <span class="votes"><ion-icon name="star"></ion-icon>20,897.</span>
+            </div>
+            <div class="genre-main">Action, Sci-fi</div>
+            <div class="type">Movie</div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <div class="review-cards">
+                <div class="review-card">
+                    <p>"The stand out for me, was Michael Keaton. When Batman is
+                        doing his thing the Danny Elfman's iconic score is booming, it'
+                        s a joy. But make no mistake this is not Batman 3, it's a Flash movie
+                        that features Keaton's Batman."
+                    </p>
+                    <div class="reviewer">
+                        <img src="images/Efe robinson.jpg" alt="Efe Robinson">
+                        <span>Efe Robinson</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>
+                        "The stand out for me, was Michael Keaton. When Batman is doing his thing
+                        the Danny Elfman's iconic score is booming, it's a joy. But make no mistake
+                        this is not Batman 3, it's a Flash movie that features Keaton's Batman."
+                    </p>
+                    <div class="reviewer">
+                        <img src="images/Efe robinson.jpg" alt="Efe Robinson">
+                        <span>Efe Robinson</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>"The stand out for me, was Michael Keaton. When Batman is doing his thing the
+                        Danny Elfman's iconic score is booming, it's a joy. But make no mistake this is not
+                        Batman 3, it's a Flash movie that features Keaton's Batman."
+                    </p>
+                    <div class="reviewer">
+                        <img src="images/Efe robinson.jpg" alt="Efe Robinson">
+                        <span>Efe Robinson</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p>"The stand out for me, was Michael Keaton. When Batman is doing his thing the Danny
+                        Elfman's iconic score is booming, it's a joy. But make no mistake this is not Batman 3,
+                        it's a Flash movie that features Keaton's Batman."
+                    </p>
+                    <div class="reviewer">
+                        <img src="images/Efe robinson.jpg" alt="Efe Robinson">
+                        <span>Efe Robinson</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Streaming Section -->
+        <section class="streaming-on">
+            <h2>Streaming On</h2>
+            <div class="streaming-service">
+                <a href="https://www.primevideo.com/detail/0OJS6SFZXH80A2949FPP7815E1/ref=atv_dp_share_cu_r">
+                    <img src="images/Prime video logo_030110.jpg" alt="Prime Video Logo">
+                </a>
+                <span>Prime Video</span>
+            </div>
+        </section>
+
+        <!-- Director & Cast Section -->
+        <section class="cast">
+            <h2>Director &<br> Top Cast</h2>
+            <div class="cast-list">
+                <div class="cast-member">
+                    <img src="images/andres mushietti_030133.jpg" alt="Andrés Muschietti">
+                    <span class="name">Andrés Muschietti</span>
+                    <span class="role">Director</span>
+                </div>
+                <div class="cast-member">
+                    <img src="images/ezra miller_102522.jpg" alt="Ezra Miller">
+                    <span class="name">Ezra Miller</span>
+                    <span class="role">Barry Allen</span>
+                </div>
+                <div class="cast-member">
+                    <img src="images/michaelkeaton_030127.jpg" alt="Michael Keaton">
+                    <span class="name">Michael Keaton</span>
+                    <span class="role">Batman</span>
+                </div>
+                <div class="cast-member">
+                    <img src="images/sasha calle_030132.jpg" alt="Sasha Calle">
+                    <span class="name">Sasha Calle</span>
+                    <span class="role">Kara Zor-El, Supergirl</span>
+                </div>
+                <div class="cast-member">
+                    <img src="images/Thriller.jpg" alt="Ben Affleck">
+                    <span class="name">Ben Affleck</span>
+                    <span class="role">Batman</span>
+                </div>
+                <div class="cast-member">
+                    <img src="images/kiersey clemons_102506.jpg" alt="Kiersey Clemons">
+                    <span class="name">Kiersey Clemons</span>
+                    <span class="role">Iris West</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="details">
+            <h2>Details</h2>
+            <div class="details-grid">
+                <div class="detail-title">
+                    <h3>Tagline</h3>
+                    <h3>Genre</h3>
+                    <h3>Parents Guide</h3>
+                    <h3>Release Date</h3>
+                    <h3>Country of Origin</h3>
+                    <h3>Available Language</h3>
+                </div>
+
+                <div class="detail-value">
+                    <h5>Worlds Colide</h5>
+                    <h5>Action, Sci-fi</h5>
+                    <h5>PG-13</h5>
+                    <h5>16 June 2023</h5>
+                    <h5>United States</h5>
+                    <h5>English</h5>
+                </div>
+            </div>
+            <!-- <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-title">Tagline</span>
+                    <span class="detail-value">Worlds Collide</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-title">Genre</span>
+                    <span class="detail-value">Action, Sci-fi</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-title">Parents Guide</span>
+                    <span class="detail-value">PG-13</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-title">Release Date</span>
+                    <span class="detail-value">16 June 2023</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-title">Country of Origin</span>
+                    <span class="detail-value">United States</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-title">Available Languages</span>
+                    <span class="detail-value">English</span>
+                </div> -->
+    </div>
+    </section>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer-col">
+                <div class="logo" id="footer-logo">
+                    <img src="images/Logo 2.jpg" alt="logo">
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Movies</h4>
+                <ul>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Sci-fi</a></li>
+                    <li><a href="#">Romance</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">General Info</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>DevTeam@gmail.com</p>
+                <p>Tel: 0000-111-2222</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="flash-top-picks1.js"></script>
+
+    <!-- 
+<script>
+    
+function addToWatchlist(movie) {
+  if (!localStorage.getItem("user")) {
+    alert("Please login to add movies to your watchlist.");
+    window.location.href = "signIn.html";
+    return;
+  }
+
+  let watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
+
+  // Prevent duplicates
+  if (watchlist.some(m => m.title === movie.title)) {
+    alert("This movie is already in your watchlist.");
+    return;
+  }
+
+  watchlist.push(movie);
+  localStorage.setItem("watchlist", JSON.stringify(watchlist));
+  alert("Movie added to your watchlist!");
+}
+</script> -->
+    <script src="watchlist-handler.js"></script>
+</body>
+
+</html>

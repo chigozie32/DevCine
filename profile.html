@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/Logo 2.jpg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body onload="protectPage(); loadProfile()">
+  <header>
+    <div class="logo">
+      <img src="images/Logo 2.jpg" alt="logo" srcset="">
+    </div>
+    <!-- hamburger -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="profile.html" class="active">Profile</a></li>
+        <li><a href="exclusive.html">Exclusive</a></li>
+        <li><a href="watchList.html">Watchlist</a></li>
+        <li><a href="forYou.html">For You</a></li>
+      </ul>
+    </nav>
+    <div class="user-actions">
+      <!-- <a href="signIn.html" class="login-btn">Login</a>
+            <a href="signUp.html" class="signup-btn">Sign Up</a> -->
+      <!-- <a href="" class="signup-btn"></a> -->
+    </div>
+  </header>
+
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <span class="close-btn">&times;</span>
+    <a href="index.html" class="active">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="forYou.html">For You</a>
+    <a href="profile.html">Profile</a>
+    <a href="exclusive.html">Exclusive</a>
+    <a href="watchList.html">Watchlist</a>
+    <!-- <a href="signIn.html">Login</a>
+    <a href="signUp.html">Sign Up</a> -->
+  </div>
+
+  <!-- overlay -->
+  <div class="overlay"></div>
+  <h2>Your Profile</h2>
+  <main>
+    <section class="container">
+      <!-- PROFILE AVATAR (safe, scoped) -->
+      <div class="pf-avatar-card">
+        <img id="pfImage" class="pf-avatar" alt="Profile photo">
+        <div class="pf-actions">
+          <!-- Hidden file input + custom upload button -->
+          <input id="pfUpload" type="file" accept="image/*" hidden>
+          <label for="pfUpload" class="pf-btn pf-btn-green">Upload Image</label>
+
+          <button id="pfRemove" type="button" class="pf-btn pf-btn-red">Remove</button>
+        </div>
+      </div>
+
+      <!-- <h2>User Profile</h2> -->
+      <p><strong>Name:</strong> <span id="profileName"></span></p>
+      <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+      <p><strong>Status:</strong> <span>You are logged In</span></p>
+
+      <button onclick="logout()">Logout</button>
+      <!-- <button id="deleteAccountBtn">Delete Account</button> -->
+      <a class="backToHome" href="index.html"><button>Back to Home</button></a>
+    </section>
+  </main>
+
+  <script src="profile.js"></script>
+</body>
+
+</html>

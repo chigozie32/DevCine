@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Watchlist</title>
+  <link rel="stylesheet" href="watchlist.css">
+</head>
+<body onload="protectPage()">
+  <header>
+    <h1>🎬 My Watchlist</h1>
+    <!-- <button >Logout</button> -->
+    <a id="logoutBtn" class="back-to-home" href="index.html">Back to Home</a>
+  </header>
+
+  <main>
+    <div id="watchlistContainer" class="movies-grid">
+      <!-- Movies will appear here -->
+    </div>
+     <button class="logout" onclick="logout()">Logout</button>
+  </main>
+
+  <script src="watchlist.js"></script>
+   <script src="authentication.js"></script>
+</body>
+</html>
