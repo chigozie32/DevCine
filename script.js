@@ -149,7 +149,7 @@ function showSlides() {
   
   slides[slideIndex - 1].style.display = "block";
   
-  setTimeout(showSlides, 8000); // Change every 10s
+  setTimeout(showSlides, 7000); // Change every 7s
 }
 // Select elements
 const hamburger = document.querySelector('.hamburger');

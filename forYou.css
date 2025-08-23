@@ -97,7 +97,7 @@ header .user-actions .signup-btn {
     background-color: var(--primary-color);
     color: #000;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: 500;
 }
 
@@ -209,6 +209,7 @@ header .user-actions .signup-btn {
 .preview-btn {
     background-color: var(--primary-color);
     color: white;
+    color: #0C0E0B;
 }
 
 .preview-btn:hover {

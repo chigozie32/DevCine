@@ -84,7 +84,7 @@ header .user-actions .signup-btn {
     background-color: var(--primary-color);
     color: #000;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: 500;
 }
 
@@ -155,7 +155,7 @@ h2 {
     color: #121212;
     border: none;
     padding: 12px 24px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
