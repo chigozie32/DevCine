@@ -50,7 +50,7 @@ const heroSlides = [
   },
   {
     title: `Lights, Camera,<br> Movie Time`,
-    desc: "Don't stress on what to watch next<br>Get recommwndation even on the<br>go!",
+    desc: "Don't stress on what to watch next<br>Get recommendation even on the<br>go!",
     cta: 'Get Started',
     bg: 'images/Couple in Decaying Classical Architecture.png',
     img: 'images/Forever.jpg'

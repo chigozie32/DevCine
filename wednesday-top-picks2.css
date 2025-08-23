@@ -94,7 +94,9 @@ header .user-actions .signup-btn {
     border-radius: 10px;
     font-weight: 500;
 }
-
+header .user-actions .signup-btn:hover{
+background-color: #6c7526;
+}
 /* header ends */
 .mobile-menu {
     display: none;
@@ -167,7 +169,9 @@ h2 {
     cursor: pointer;
     margin-top: 100px;
 }
-
+.watchlist-btn:hover{
+    background-color: #6c7526;
+}
 /* Info Bar Section */
 .info-bar {
     display: flex;

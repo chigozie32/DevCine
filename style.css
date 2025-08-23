@@ -92,7 +92,9 @@
    border-radius: 10px;
    font-weight: 500;
  }
-
+header .user-actions .signup-btn:hover{
+background-color: #6c7526;
+}
  .mobile-menu {
    display: none;
    overflow-y: auto;
@@ -420,7 +422,7 @@
  }
 
  .darken {
-   filter: brightness(0.3);
+   filter: brightness(50%);
  }
 
  .top-picks-overlay {
@@ -766,7 +768,9 @@
      margin-top: 30px;
      justify-content: center;
    }
-
+.darken {
+   filter: none;
+ }
    .search-section {
      flex-direction: column;
      align-items: stretch;

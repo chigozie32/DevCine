@@ -92,7 +92,9 @@ header .user-actions .signup-btn {
     border-radius: 10px;
     font-weight: 500;
 }
-
+header .user-actions .signup-btn:hover{
+background-color: #6c7526;
+}
 .mobile-menu {
     display: none;
     overflow-y: auto;
