@@ -58,7 +58,7 @@ const heroSlides = [
   {
     title: "What's playing?",
     desc: 'Save, add to watchlist and watch<br>with your favourite available<br>application.',
-    cta: 'Add to Watchlist',
+    cta: 'Get Started',
     bg: 'images/karen-zhao.jpg',
     img: 'images/Spider man.jpg'
   }

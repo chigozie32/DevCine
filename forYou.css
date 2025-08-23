@@ -8,14 +8,6 @@
     --border-radius: 12px;
 }
 
-/* --- General Setup --- */
-/* :root {
-    --primary-color: #e50914;
-    --background-color: #141414;
-    --card-background: #222;
-    --text-color: #f5f5f5;
-} */
-
 body {
     font-family: Geist, sans-serif;
     background-color: var(--background-color);
