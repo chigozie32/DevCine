@@ -48,7 +48,7 @@
         <a href="forYou.html">For You</a>
         <a href="profile.html">Profile</a>
         <a href="exclusive.html">Exclusive</a>
-        <a href="watchList.html">Watchlist</a>
+        <a href="watchlist.html">Watchlist</a>
         <a href="signIn.html">Login</a>
         <a href="signUp.html">Sign Up</a>
     </div>
@@ -210,31 +210,6 @@
                     <h5>English</h5>
                 </div>
             </div>
-            <!-- <div class="details-grid">
-                <div class="detail-item">
-                    <span class="detail-title">Tagline</span>
-                    <span class="detail-value">Worlds Collide</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-title">Genre</span>
-                    <span class="detail-value">Action, Sci-fi</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-title">Parents Guide</span>
-                    <span class="detail-value">PG-13</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-title">Release Date</span>
-                    <span class="detail-value">16 June 2023</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-title">Country of Origin</span>
-                    <span class="detail-value">United States</span>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-title">Available Languages</span>
-                    <span class="detail-value">English</span>
-                </div> -->
     </div>
     </section>
     </div>
@@ -249,11 +224,11 @@
             <div class="footer-col">
                 <h4>Movies</h4>
                 <ul>
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Comedy</a></li>
-                    <li><a href="#">Horror</a></li>
-                    <li><a href="#">Sci-fi</a></li>
-                    <li><a href="#">Romance</a></li>
+                    <li><a href="exclusive.html#action">Action</a></li>
+                    <li><a href="exclusive.html#comedy">Comedy</a></li>
+                    <li><a href="exclusive.html#horror">Horror</a></li>
+                    <li><a href="exclusive.html#sci-fi">Sci-fi</a></li>
+                    <li><a href="exclusive.html#romance">Romance</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -275,30 +250,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="flash-top-picks1.js"></script>
-
-    <!-- 
-<script>
     
-function addToWatchlist(movie) {
-  if (!localStorage.getItem("user")) {
-    alert("Please login to add movies to your watchlist.");
-    window.location.href = "signIn.html";
-    return;
-  }
-
-  let watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
-
-  // Prevent duplicates
-  if (watchlist.some(m => m.title === movie.title)) {
-    alert("This movie is already in your watchlist.");
-    return;
-  }
-
-  watchlist.push(movie);
-  localStorage.setItem("watchlist", JSON.stringify(watchlist));
-  alert("Movie added to your watchlist!");
-}
-</script> -->
     <script src="watchlist-handler.js"></script>
 </body>
 
