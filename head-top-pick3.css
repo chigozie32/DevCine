@@ -275,12 +275,11 @@ h2 {
 /* Streaming Section */
 .streaming-on {
     margin-bottom: 100px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .streaming-on h2 {
     border-left: none;
-    margin-left: -20px;
     font-size: 1.3rem;
 }
 
@@ -295,6 +294,7 @@ h2 {
     height: 60px;
     border-radius: 5px;
     margin-bottom: 8px;
+    margin-left: 8px;
 }
 
 .streaming-service span {
@@ -307,7 +307,7 @@ h2 {
 /* Cast Section */
 .cast {
     margin-bottom: 100px;
-    margin-left: 30px;
+     margin-left: 0px;
 }
 
 .cast h2 {
