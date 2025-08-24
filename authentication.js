@@ -26,8 +26,8 @@ function login() {
 
   if (storedUser && storedUser.email === email && storedUser.password === password) {
     sessionStorage.setItem("loggedInUser", JSON.stringify(storedUser)); // create session
-    alert("✔️ Login successful!");
     window.location.href = "index.html"; // go to exclusive movies page
+    alert("✔️ Login successful!");
     return;
   } else {
     alert("❌ Invalid email or password");

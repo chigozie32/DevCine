@@ -64,7 +64,12 @@
           of cybercrime by an old friend, <br>
           setting off a chain of moral.
         </p>
-        <a href=""><button class="btn-primary">Get Started</button></a>
+        <a href=""><button class="btn-primary"
+          onclick='addToWatchlist({ 
+  title: "To kill a Monkey", 
+  image: "images/to kill a monkey.jpg ", 
+  rating: "7.8" 
+})'>Add to watchlist</button></a>
       </div>
       <div class="hero-carousel">
         <!-- Add featured movie posters here -->
@@ -158,6 +163,7 @@
     </div>
   </footer>
   <script src="explore.js"></script>
+  <script src="watchlist-handler.js"></script>
 </body>
 
 </html>

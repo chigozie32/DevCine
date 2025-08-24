@@ -46,21 +46,24 @@ const heroSlides = [
     desc: 'Get in touch with the latest movies,<br>add to your watchlist, and play<br> anytime and anywhere.',
     cta: 'Get Started',
     bg: 'images/Cozy Movie Theater-1.png',
-    img: 'images/to kill a monkey.jpg'
+    img: 'images/to kill a monkey.jpg',
+    ctaLink: 'explore.html',
   },
   {
     title: `Lights, Camera,<br> Movie Time`,
     desc: "Don't stress on what to watch next<br>Get recommendation even on the<br>go!",
     cta: 'Get Started',
     bg: 'images/Couple in Decaying Classical Architecture.png',
-    img: 'images/Forever.jpg'
+    img: 'images/Forever.jpg',
+    ctaLink: 'explore.html',
   },
   {
     title: "What's playing?",
     desc: 'Save, add to watchlist and watch<br>with your favourite available<br>application.',
     cta: 'Get Started',
     bg: 'images/karen-zhao.jpg',
-    img: 'images/Spider man.jpg'
+    img: 'images/Spider man.jpg',
+    ctaLink: 'explore.html',
   }
 ];
 
@@ -89,6 +92,9 @@ function renderHero() {
   heroTitle.innerHTML = mainSlide.title;
   heroDesc.innerHTML = mainSlide.desc;
   heroCta.textContent = mainSlide.cta;
+  heroCta.onclick = () => {
+    window.location.href = mainSlide.ctaLink;
+  };
 
   // Update thumbnails
   heroImages.forEach((img, idx) => {
