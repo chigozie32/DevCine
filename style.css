@@ -148,7 +148,9 @@ background-color: #6c7526;
    cursor: pointer;
    margin: 20px;
  }
-
+.btn-primary:hover{
+  background-color: #5a6124;
+}
  .hero-carousel {
    flex-basis: 60%;
    display: flex;
